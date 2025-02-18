@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web AgriCapt</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Bulnes 364, 3800636 Chillán, Ñuble</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Lunes - Viernes : 09.00 AM - 16.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+56 9 3277 5088</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <h2 class="m-0 text-primary">AGRICAPT</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                <a href="#" class="nav-item nav-link">Servicios</a>
+                <a href="#" class="nav-item nav-link">Projectos</a>
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mas</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#" class="dropdown-item">Feature</a>
+                        <a href="#" class="dropdown-item">Cotización Gratuita</a>
+                        <a href="#" class="dropdown-item">Nuestro Equipo</a>
+                        <a href="#" class="dropdown-item">Testimonios</a>
+                        <a href="#" class="dropdown-item">404</a>
+                    </div>
+                </div> -->
+                <a href="#" class="nav-item nav-link">Contacto</a>
+            </div>
+            <!--
+            <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Obtenga una Cotización<i
+                    class="fa fa-arrow-right ms-3"></i></a>
+                    -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/home/aprende.png'>">
+                <img class="img-fluid" src="img/home/aprende.png" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown">AGRICAPT,
+                                    UN LUGAR DE APRENDIZAJE!</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">¡Prepárate para sumergirte en un universo
+                                    de aprendizaje continuo y descubrir todo lo que Zeew Space tiene preparado para ti!
+                                </p>
+                                <a href=""
+                                    class="btn btn-outline-danger rounded-pill py-3 px-5 animated slideInLeft">Leer
+                                    Mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/home/mano.png'>">
+                <img class="img-fluid" src="img/home/mano.png" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown">AGRICAPT,
+                                    ¡Formamos tu futuro!</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">La educación es el motor del progreso.
+                                    Con nosotros, desarrollarás habilidades clave para destacar en un mundo en constante
+                                    evolución.</p>
+                                <a href="" class="btn btn-info rounded-pill py-3 px-5 animated slideInLeft">Leer Mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/home/reu.png'>">
+                <img class="img-fluid" src="img/home/reu.png" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown">AGRICAPT, APRENDE, CRECE, TRIUNFA.
+                                </h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">En AgriCapt, la formación es la clave del
+                                    éxito. Te ofrecemos las herramientas y conocimientos necesarios para impulsar tu
+                                    crecimiento profesional.</p>
+                                <a href=""
+                                    class="btn btn-danger text-white rounded-pill py-3 px-5 animated slideInLeft">Leer
+                                    Mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa fa-users text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">40</h1>
+                    </div>
+                    <h5 class="mb-3">Clientes Felices</h5>
+                    <!--<span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span> -->
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">40</h1>
+                    </div>
+                    <h5 class="mb-3">Cursos Hechos</h5>
+                    <!--<span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span> -->
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa fa-award text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">40</h1>
+                    </div>
+                    <h5 class="mb-3">Certificados</h5>
+                    <!--<span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span> -->
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa fa-users-cog text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">40</h1>
+                    </div>
+                    <h5 class="mb-3">Expertos</h5>
+                    <!--<span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature Start -->
+
+
+
+    <!-- About Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/home/somos.png"
+                            style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <h6 class="text-primary">Nosotros</h6>
+                        <h1 class="mb-4">¿Quienes Somos?</h1>
+                        <p>Nosotros nos enfocamos en proporcionar una educación de alta calidad que permita a nuestros
+                            estudiantes adquirir las
+                            habilidades necesarias para enfrentar los desafíos del mundo laboral. A través de cursos
+                            especializados, capacitaciones prácticas y un enfoque personalizadO</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Atento a tus nesesidades</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Preocupados de tu bienestar</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Cursos de interes</p>
+                        <a href="about.html" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Explora Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Nuestros Servicios</h6>
+                <h1 class="mb-4">Tranforma tu vida cotidiana con AgriCapt</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/home/cap.png" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <!-- <div class="service-icon">
+                                <i class="fa fa-solar-panel fa-3x"></i>
+                            </div>-->
+
+                            <h4 class="mb-3 mt-4">Capacitaciones</h4>
+                            <p>¡Buscas capacitar a tus clientes de manera clara y sencilla! Que esperas cuenta con
+                                nosotros</p>
+                            <a class="small fw-medium" href="">Saber Más<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/home/art.png" alt="">
+                        <div class="position-relative p-4 pt-0">
+
+                            <h4 class="mb-3 mt-4">Diseño</h4>
+                            <p>Tienes una idea en mente y quieres trasmitirlo mendiante un diseño. Ven y cuentanos </p>
+                            <a class="small fw-medium" href="">Saber Más<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/home/web.png" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <!--<div class="service-icon">
+                                <i class="fa fa-lightbulb fa-3x"></i>
+                            </div>-->
+
+                            <h4 class="mb-3 mt-4">Web</h4>
+                            <p>¿Tienes una idea en mente y quieres plasmarla en una página web?
+                                Te ayudamos a convertir tu visión en un diseño web funcional.</p>
+                            <a class="small fw-medium" href="">Saber Más<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/home/cap.png" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <!-- <div class="service-icon">
+                                <i class="fa fa-solar-panel fa-3x"></i>
+                            </div>-->
+
+                            <h4 class="mb-3 mt-4">Capacitaciones</h4>
+                            <p>¡Buscas capacitar a tus clientes de manera clara y sencilla! Que esperas cuenta con
+                                nosotros</p>
+                            <a class="small fw-medium" href="">Saber Más<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/home/art.png" alt="">
+                        <div class="position-relative p-4 pt-0">
+
+                            <h4 class="mb-3 mt-4">Diseño</h4>
+                            <p>Tienes una idea en mente y quieres trasmitirlo mendiante un diseño. Ven y cuentanos </p>
+                            <a class="small fw-medium" href="">Saber Más<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/home/web.png" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <!--<div class="service-icon">
+                                <i class="fa fa-lightbulb fa-3x"></i>
+                            </div>-->
+
+                            <h4 class="mb-3 mt-4">Web</h4>
+                            <p>¿Tienes una idea en mente y quieres plasmarla en una página web?
+                                Te ayudamos a convertir tu visión en un diseño web funcional,
+                                atractivo e innovador. </p>
+                            <a class="small fw-medium" href="">Saber Más<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <h6 class="text-primary">¡Por Qué Elegirnos!</h6>
+                        <h1 class="mb-4">Explora tus Intereses y Mejora tu Experiencia de Aprendizaje en AGRICAPT</h1>
+                        <p class="mb-4 pb-2">Nuestro Objetivo es ser una institución líder en capacitación, formando
+                            profesionales con
+                            habilidades avanzadas, adaptadas a las demandas del mercado, y empoderando a nuestros
+                            estudiantes para que alcancen su máximo potencial.</p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-check text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Calidad</p>
+                                        <h5 class="mb-0">Servicios</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-user-check text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Experto</p>
+                                        <h5 class="mb-0">Trabajadores</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-drafting-compass text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Gratis</p>
+                                        <h5 class="mb-0">Consulta</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-headphones text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Cliente</p>
+                                        <h5 class="mb-0">Soporte</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/home/reu.png"
+                            style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Projects Start -->
+    <section id="cursos">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h6 class="text-primary">Nuestros Cursos
+                    </h6>
+                    <h1 class="mb-4">Visite Nuestros Cursos</h1>
+                </div>
+                <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-12 text-center">
+                        <ul class="list-inline mb-5" id="portfolio-flters">
+                            <li class="mx-2 active" data-filter="*">Todo</li>
+                            <li class="mx-2" data-filter=".first">Agropecuario</li>
+                            <li class="mx-2" data-filter=".second">Logística y Operaciones</li>
+                            <li class="mx-2" data-filter=".third">Gestión & Negocios</li>
+                            <li class="mx-2" data-filter=".four">Salud</li>
+                            <li class="mx-2" data-filter=".five">Ciencias Sociales</li>
+                            <li class="mx-2" data-filter=".six">Oficios</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
+    
+    
+                    <!--AGROPECUARIOS-->
+                    <div class="col-lg-4 col-md-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/home/nad.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/home/nad.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Técnicas de liderazgo y gestión de cuadrillas de cosecha y
+                                arándanos</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">a</h5>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/home/nad.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/home/nad.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Técnicas de liderazgo y gestión de cuadrillas de cosecha y
+                                frambuesas</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">a</h5>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/home/nad.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/home/nad.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Huertos Verticales Urbanos y/o Domiciliarios</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">a</h5>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/home/nad.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/home/nad.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">liderazgo y Cosecha de Berries</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">a</h5>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/home/nad.png" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/home/nad.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Manejo de cultivos de Hortalizas al Aire Libre</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">a</h5>
+                        </div>
+                    </div>
+                    <!--LOGISTICA Y OPERACIONES
+                    <div class="col-lg-4 col-md-6 portfolio-item second">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-5.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                    href="img/img-600x400-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Wind Turbines</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item third">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-4.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                    href="img/img-600x400-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Hydropower Plants</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 portfolio-item second">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-2.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                    href="img/img-600x400-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Wind Turbines</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item third">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-1.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                    href="img/img-600x400-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Hydropower Plants</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item four">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-1.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                    href="img/img-600x400-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Hydropower Plants</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item five">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-1.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                    href="img/img-600x400-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Hydropower Plants</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item six">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-1.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                    href="img/img-600x400-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Hydropower Plants</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                        </div>
+                    </div>
+                          -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <hr>
+   
+
+    <!-- Projects End -->
+
+
+    <!-- Quote Start -->
+    <section id="contact">
+        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div class="container quote px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100" src="img/quote.jpg"
+                                style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-lg-5 pe-lg-0">
+                            <h6 class="text-primary">Contacto</h6>
+                            <h1 class="mb-4">CONTÁCTATE CON NOSOTROS</h1>
+                            <p class="mb-4 pb-2">¡Tienes dudas y preguntas? Rellena este formulario</p>
+                            <form action="https://formsubmit.co/agricapt.cl@gmail.com" method="POST">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="https://tusitio.com/gracias">
+                                <div class="row g-3">
+                                    <div class="col-12 col-sm-6">
+                                        <input type="text" class="form-control border-0" name="nombre"
+                                            placeholder="Tu Nombre" style="height: 55px;" required>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input type="email" class="form-control border-0" name="email"
+                                            placeholder="ejemplo@gmail.com" style="height: 55px;" required>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input type="text" class="form-control border-0" name="telefono"
+                                            placeholder="+56 9 1111 2222" style="height: 55px;">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <select class="form-select border-0" name="servicio" style="height: 55px;">
+                                            <option selected>Selecciona tu servicio</option>
+                                            <option value="Soporte">Soporte</option>
+                                            <option value="Reclamos">Reclamos</option>
+                                            <option value="Otros">Otros</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control border-0" name="mensaje" placeholder="Tu Mensaje Aquí"
+                                            required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+   
+
+    <!-- Quote End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Nuestro Equipo</h6>
+                <h1 class="mb-4">MIEMBROS AGRICAPT</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded overflow-hidden">
+                        <div class="d-flex">
+                            <img class="img-fluid w-75" src="img/home/team-1.png" alt="">
+                            <div class="team-social w-25">
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>MegaleXY</h5>
+                            <span>Programador</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded overflow-hidden">
+                        <div class="d-flex">
+                            <img class="img-fluid w-75" src="img/home/rab.png" alt="">
+                            <div class="team-social w-25">
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>Cony</h5>
+                            <span>Diseñadora</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded overflow-hidden">
+                        <div class="d-flex">
+                            <img class="img-fluid w-75" src="img/home/team-1.png" alt="">
+                            <div class="team-social w-25">
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>Full Name</h5>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Testimonios</h6>
+                <h1 class="mb-4">¡Lo que Dicen Nuestros Clientes!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed
+                            sed. Magna
+                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at
+                            rebum justo sea
+                            clita.</p>
+                        <h5 class="mb-1">Client Name</h5>
+                        <span class="fst-italic">Profession</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-2.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed
+                            sed. Magna
+                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at
+                            rebum justo sea
+                            clita.</p>
+                        <h5 class="mb-1">Client Name</h5>
+                        <span class="fst-italic">Profession</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-3.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed
+                            sed. Magna
+                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at
+                            rebum justo sea
+                            clita.</p>
+                        <h5 class="mb-1">Client Name</h5>
+                        <span class="fst-italic">Profession</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Dirección</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bulnes 364, 3800636 Chillán,
+                        Ñuble</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+56 9 3277 5088</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>agricapt.cl@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Enlaces Rápidos</h5>
+                    <a class="btn btn-link" href="">Nosotros</a>
+                    <a class="btn btn-link" href="">Contacto</a>
+                    <a class="btn btn-link" href="">Nuestros Servicios</a>
+                    <a class="btn btn-link" href="">Términos & Condiciones </a>
+                    <a class="btn btn-link" href="">Soporte</a>
+                </div>
+
+                <!--
+                     <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+                -->
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="https://megalexy.vercel.app/">MegaleXY</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Diseñado Por <a href="https://megalexy.vercel.app/"> MegaleXY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
